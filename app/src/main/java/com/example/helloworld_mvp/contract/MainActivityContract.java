@@ -8,7 +8,7 @@ public interface MainActivityContract {
     }
 
     interface Presenter {
-        void onClick();
+        void onClick(android.view.View view);
     }
 
     interface Model {

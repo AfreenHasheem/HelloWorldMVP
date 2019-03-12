@@ -5,6 +5,6 @@ import com.example.helloworld_mvp.contract.MainActivityContract;
 public class MainActivityModel implements MainActivityContract.Model {
     @Override
     public String getData() {
-        return null;
+        return "Hello World";
     }
 }
