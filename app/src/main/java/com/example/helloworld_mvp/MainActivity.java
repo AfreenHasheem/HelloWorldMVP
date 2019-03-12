@@ -22,6 +22,10 @@ public class MainActivity extends AppCompatActivity implements MainActivityContr
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //create instance(object) of a Presenter as we need the Presenter to talk to View and Model as a mediator
+        //if View needs any data, Presenter will fetch from the Model and pass it to the View
+        //if View needs data, it will ask the Presenter to fetch it from the Model
+        //this = passing the current activity that is implementing the View interface
         mPresenter = new MainActivityPresenter(this);
     }
 
